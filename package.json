@@ -1,0 +1,44 @@
+{
+  "name": "sfmc",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "app/*"
+    ]
+  },
+  "scripts": {
+    "build:api": "npm --prefix app/api run build",
+    "start:api": "npm --prefix app/api start",
+    "build:ui": "npm --prefix app/ui run build",
+    "start:ui": "npm --prefix app/ui start",
+    "start": "run-p start:ui start:api"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.30",
+    "@types/react-dom": "^18.2.14",
+    "@types/react-table": "^7.7.17",
+    "@types/xml2js": "^0.4.13",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.15",
+    "csrf": "^3.1.0",
+    "dotenv": "^16.0.1",
+    "history": "^5.3.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-burger-menu": "^3.0.8",
+    "react-dom": "^18.2.0",
+    "react-globally": "^1.1.0",
+    "react-icons": "^4.11.0",
+    "react-table": "^7.8.0",
+    "react-toastify": "^9.1.3",
+    "rxjs": "^5.5.2",
+    "rxjs-operators": "^1.1.3",
+    "use-history": "^1.4.1",
+    "xml2js": "^0.6.2",
+    "yarn": "^1.22.19"
+  }
+}
